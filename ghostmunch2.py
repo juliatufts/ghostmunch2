@@ -1,4 +1,4 @@
-#ghostcount is a program consisting of the minigame "Ghost Count" in Pie Parlor
+#Ghost Munch 2 is a minigame consisting of ghosts who eat pies by colliding with them
 
 #----------------INITIALIZATION
 import pygame, sys
@@ -251,7 +251,7 @@ while True:
         #Check for keyboard input to control player
         keys = pygame.key.get_pressed()
         #Arrow keys move player
-        #can't move beyond the screen frame
+        #moving beyond screen frame places player on opposite side of screen
         if keys[K_d]:
             if player1.rect.x > (W-moveSpeed):
                 player1.rect.x = -50
